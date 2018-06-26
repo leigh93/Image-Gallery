@@ -1,0 +1,32 @@
+{%load bootstrap3 %}
+{% load static%}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+  
+    {% if title %}
+    <title>Lumiere - {{title}}</title>
+    {% else %}
+    <title> Lumiere </title>
+  {% endif %}
+  {% block styles %}
+    {% bootstrap_css %}
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <script type="text/javascript" src= "{% static 'js/base.js' %}"></script>
+  {% endblock %}
+
+</head>
+<body>
+    
+
+    {% block content %} 
+      <h1>LUMIERE</h1> 
+    {%endblock%}
+    
+    {% block scripts %}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ {% bootstrap_javascript %}
+{% endblock %}
+</body>
+</html>
