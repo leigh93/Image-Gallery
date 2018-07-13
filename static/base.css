@@ -1,9 +1,148 @@
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+
+
+/* BODY */
+* {
+    box-sizing: border-box;
+}
+
 body{
     
-    background-image: url(images/bck.jpg);
+    background-image: url(images/19.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: fixed;
-        
+    background-attachment: fixed;
 }
+
+/* heading */
+.heading{
+    background-image: url(images/14.jpg);      
+    margin-top: 5%;
+    padding: 1%;
+    font-size: 50px;
+    font-weight:bold;
+    color: #000;
+}
+
+.heading h1{
+    color: #fff;
+    text-align: center;
+    font-size: 100px; 
+    margin: 10%;
+    font-family: 'Libre Barcode 128 Text', cursive;
+}
+
+/* text styling */
+h1, h2, h3, h4, h5, p{
+    font-weight: normal;
+    font-size: 50px;
+    margin: 0;
+    color: #000;
+    font-family: 'Nanum Myeongjo', serif; 
+    font-family: 'Libre Barcode 128 Text', cursive;
+    
+}
+a, a:hover, a:visited{
+    color: #fff;
+    text-align: center;
+    font-family: 'Libre Barcode 128 Text', cursive;
+    font-size: 70px;
+}
+/* navigation */
+.navigation{
+    background-image: url(images/14.jpg); 
+
+}
+
+.nav-links a{
+    margin-right: 11%;
+    margin-left: 11%;
+}
+
+
+/* images */
+
+
+.modal{
+    background-color:transparent;
+}
+
+.modal-button{
+    /* background-color:rgba(, 1, 1, 0.1); */
+    background-color:transparent;
+    padding: 0%;
+    margin: 0%;
+    border: none;
+
+}
+
+
+.thumbnail{
+    /* background-color: rgba(11, 23, 63, 0.2); */
+    background-color:rgba(1, 1, 1, 0.1);
+    border: none;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+/* .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+} */
+/* .column img{
+    margin-top: 8px;
+    vertical-align: middle;
+    margin:0;
+} */
+
+/* div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+}
+
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+} */
+
+
+/* .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+  
+.modal-button img{
+    margin-top: 8px;
+    vertical-align: middle;
+}  */
+
+
 

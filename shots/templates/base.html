@@ -4,6 +4,7 @@
 <html>
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
   
     {% if title %}
     <title>Lumiere - {{title}}</title>
@@ -12,7 +13,11 @@
   {% endif %}
   {% block styles %}
     {% bootstrap_css %}
+    
     <link rel="stylesheet" href="{% static 'base.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Bad+Script|Libre+Barcode+128+Text|Nanum+Myeongjo" rel="stylesheet">
+
+
     <!-- <script type="text/javascript" src= "{% static 'js/base.js' %}"></script> -->
   {% endblock %}
 
@@ -21,12 +26,22 @@
     
 
     {% block content %} 
-      <h1>LUMIERE</h1> 
+    <div class="container">
+        <div class = "heading">
+          <h1>LUMIERE</h1>
+          {% include 'navbar.html'%}
+        </div>
+      
+      
+    </div>
     {%endblock%}
     
     {% block scripts %}
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+    
  {% bootstrap_javascript %}
 {% endblock %}
+
 </body>
 </html>
