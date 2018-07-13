@@ -25,11 +25,11 @@ Existing Categories include:
 * Fashion
 
 # Setup/Installation Requirements 
-$ git clone https://github.com/Ashleyzawadi/Image-Gallery.git
-$ cd Image-Gallery
-$ source virtual/bin/activate
-Install all the necessary requirements by running pip install -r requirements.txt (Python 3).
-$ ./manager.py runserver
+*git clone https://github.com/Ashleyzawadi/Image-Gallery.git
+* cd Image-Gallery
+* source virtual/bin/activate
+* Install all the necessary requirements by running pip install -r requirements.txt (Python 3).
+* Run using python3.6 manager.py runserver
 
 # Technologies Used
 HTML5
