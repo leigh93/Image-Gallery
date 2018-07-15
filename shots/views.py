@@ -13,10 +13,11 @@ def index(request):
     args = {'images': images, 'imagelocation':imagelocation, 'imagecategory':imagecategory }
     
     return render(request, 'index.html', args)
+    
 
-def category(request):
-    imagecategory = Category.objects.all()
-    args = {'imagecategory': imagecategory}
+# def category(request):
+#     imagecategory = Category.objects.all()
+#     # args = {'imagecategory': imagecategory}
 
     return render (request, 'categories.html', args)
 
@@ -30,6 +31,8 @@ def search_results(request):
     else:
         message = "You haven't searched for any term"
         return render(request, "search.html", {"message":message})
+
+
 # keith mzaza
 # def search_results(request):
 #    if 'image' in request.GET and request.GET["image"]:
