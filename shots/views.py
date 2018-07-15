@@ -15,9 +15,9 @@ def index(request):
     return render(request, 'index.html', args)
     
 
-# def category(request):
-#     imagecategory = Category.objects.all()
-#     # args = {'imagecategory': imagecategory}
+def category(request):
+    imagecategory = Category.objects.all()
+    # args = {'imagecategory': imagecategory}
 
     return render (request, 'categories.html', args)
 
