@@ -1,1 +1,1 @@
-web: gunicorn​ ​ project_name(arcade).wsgi​
+web: gunicorn​ ​ arcade.wsgi​
