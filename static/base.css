@@ -91,7 +91,10 @@ a, a:hover, a:visited{
 
 }
 
-
+/* .modal-button img{
+    height: 400px;
+    width:auto;
+} */
 .thumbnail{
     /* background-color: rgba(11, 23, 63, 0.2); */
     background-color:rgba(1, 1, 1, 0.1);
