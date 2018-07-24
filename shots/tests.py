@@ -29,20 +29,20 @@ class TestImage(TestCase):
 
     def test_save_multiple(self):
         self.new_image.save_image()
-        test_image=Image("test.jpg", "user", "kileleshwa", "testuser")
+        test_image=Image("test.jpg","testuser")
         test_Image.save_image()
         self.assertEqual(len(Image.image_list),2)
 
     def test_delete_image(self):
-        test_image = Image("test", "user","700000000", "user@mail.com")
+        test_image = Image("test.jpg")
         test_image.save_image()
-        test_image2=Contact("test", "user", "978899877766", "testuser@gmail.com")
+        test_image2=Image("test.jpg")
         test_image2.save_image()
         test_image.delete_image()
         self.assertEqual(len(Image.image_list),1)
 
     def test_find_by_location(self):
-        test_image = Image("test", "user","700000000", "user@mail.com")
+        test_image = Image("test.jpg")
         test_image.save_image()
         found_image = Image.find_by_location("Kilimani")
         self.assertEqual(found_image.name,test_image.name)
