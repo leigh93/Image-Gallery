@@ -99,18 +99,22 @@ a, a:hover, a:visited{
     /* background-color: rgba(11, 23, 63, 0.2); */
     background-color:rgba(1, 1, 1, 0.1);
     border: none;
+    height: auto;
 }
-.row {
+/* .thumbnail img{
+    height: 5%;
+} */
+/* .row {
     display: flex;
     flex-wrap: wrap;
     padding: 0 4px;
 }
-/* .column {
+.column {
     flex: 25%;
     max-width: 25%;
     padding: 0 4px;
-} */
-/* .column img{
+}
+.column img{
     margin-top: 8px;
     vertical-align: middle;
     margin:0;
