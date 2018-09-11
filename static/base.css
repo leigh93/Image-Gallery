@@ -33,6 +33,7 @@ body{
 .heading{
     background-image: url(images/14.jpg);      
     margin-top: 5%;
+    margin-bottom: 5%;
     padding: 1%;
     font-size: 50px;
     font-weight:bold;

@@ -24,17 +24,19 @@
 </head>
 <body>
     
-
-    {% block content %} 
     <div class="container">
         <div class = "heading">
-          <h1>LUMIERE</h1>
-          {% include 'navbar.html'%}
-        </div>
+            <h1>LUMIERE</h1>
+            {% include 'navbar.html'%}
+          </div>
+    {% block content %} 
+    
+       
       
       
-    </div>
+    
     {%endblock%}
+  </div>
     
     {% block scripts %}
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
