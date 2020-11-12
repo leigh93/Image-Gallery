@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
-
+from cloudinary.models import CloudinaryField
 from django.db import models
 
 # Create your models here.
@@ -18,7 +18,7 @@ class Category(models.Model):
         return self.category
 
 class Image(models.Model):
-    image = models.ImageField(upload_to='images-posted/')
+    image = CloudinaryField()
     image_name= models.CharField(max_length = 250)
     image_location=models.ForeignKey(Location)
     image_category=models.ForeignKey(Category)
